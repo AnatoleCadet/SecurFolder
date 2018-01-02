@@ -60,13 +60,6 @@ namespace SecurFolder
             lblFileNumber.Text = "";
             lblDirectoryNumber.Text = "";
             lblDateCreated.Text = "";
-            lblFolderSelected.Text = "";
-        }
-
-        private void btnFolderSelected_Click(object sender, EventArgs e)
-        {
-            fbdFolderSelected.ShowDialog();
-            lblFolderSelected.Text = fbdFolderSelected.SelectedPath;
         }
     }
 }
