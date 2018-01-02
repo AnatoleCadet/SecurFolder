@@ -42,6 +42,7 @@
             this.lblDirectoryNumber = new System.Windows.Forms.Label();
             this.fbdFolderSelected = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lstListFileAndFolder = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -96,7 +97,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(379, 228);
+            this.btnClose.Location = new System.Drawing.Point(379, 278);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 2;
@@ -160,6 +161,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lstListFileAndFolder);
             this.groupBox2.Controls.Add(this.lblDirectoryNumber);
             this.groupBox2.Controls.Add(this.lblDateCreated);
             this.groupBox2.Controls.Add(this.label3);
@@ -168,15 +170,26 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(12, 109);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(442, 100);
+            this.groupBox2.Size = new System.Drawing.Size(442, 163);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
+            // 
+            // lstListFileAndFolder
+            // 
+            this.lstListFileAndFolder.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lstListFileAndFolder.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lstListFileAndFolder.FormattingEnabled = true;
+            this.lstListFileAndFolder.HorizontalScrollbar = true;
+            this.lstListFileAndFolder.Location = new System.Drawing.Point(170, 20);
+            this.lstListFileAndFolder.Name = "lstListFileAndFolder";
+            this.lstListFileAndFolder.Size = new System.Drawing.Size(247, 117);
+            this.lstListFileAndFolder.TabIndex = 9;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 263);
+            this.ClientSize = new System.Drawing.Size(468, 314);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -211,6 +224,7 @@
         private System.Windows.Forms.Label lblDirectoryNumber;
         private System.Windows.Forms.FolderBrowserDialog fbdFolderSelected;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ListBox lstListFileAndFolder;
     }
 }
 

@@ -31,8 +31,15 @@ namespace SecurFolder
                 //taking the number of files and directories in te selected directory
                 int intNumberFile = 0;
                 int intNumberDirectory = 0;
-                foreach(var f in dr.GetFiles()) { intNumberFile += 1; }
-                foreach(var d in dr.GetDirectories()) { intNumberDirectory += 1; }
+                foreach(var f in dr.GetFiles()) {
+                    intNumberFile += 1;
+                    lstListFileAndFolder.Items.Add(f.FullName);
+                    
+                }
+                foreach(var d in dr.GetDirectories()) {
+                    intNumberDirectory += 1;
+                    lstListFileAndFolder.Items.Add(d.FullName + "");
+                }
 
                 lblDateCreated.Text = Convert.ToString(dr.CreationTime);
                 lblFileNumber.Text = Convert.ToString(intNumberFile);
