@@ -1,0 +1,11 @@
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\bin\Debug\SecurFolder.exe.config
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\bin\Debug\SecurFolder.exe
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\bin\Debug\SecurFolder.pdb
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\obj\Debug\SecurFolder.csprojResolveAssemblyReference.cache
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\obj\Debug\SecurFolder.frmListFolderLock.resources
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\obj\Debug\SecurFolder.frmMain.resources
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\obj\Debug\SecurFolder.Properties.Resources.resources
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\obj\Debug\SecurFolder.csproj.GenerateResource.Cache
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\obj\Debug\SecurFolder.csproj.CoreCompileInputs.cache
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\obj\Debug\SecurFolder.exe
+C:\Users\client\Documents\Visual Studio 2017\Projects\SecurFolder\SecurFolder\SecurFolder\obj\Debug\SecurFolder.pdb

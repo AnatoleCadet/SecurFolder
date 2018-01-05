@@ -73,5 +73,11 @@ namespace SecurFolder
         {
 
         }
+
+        private void btnListFolderLock_Click(object sender, EventArgs e)
+        {
+            frmListFolderLock lfl = new frmListFolderLock();
+            lfl.ShowDialog();
+        }
     }
 }

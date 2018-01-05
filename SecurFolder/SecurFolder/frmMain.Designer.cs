@@ -61,6 +61,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtFolderSelected = new System.Windows.Forms.TextBox();
             this.btnFolderSelected = new System.Windows.Forms.Button();
+            this.btnListFolderLock = new System.Windows.Forms.Button();
             this.tcOperation.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -73,7 +74,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(161, 13);
+            this.label1.Location = new System.Drawing.Point(252, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 20);
             this.label1.TabIndex = 0;
@@ -102,6 +103,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tabPage1.Controls.Add(this.btnListFolderLock);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -215,12 +217,12 @@
             // lstListFileAndFolder
             // 
             this.lstListFileAndFolder.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lstListFileAndFolder.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lstListFileAndFolder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstListFileAndFolder.FormattingEnabled = true;
             this.lstListFileAndFolder.HorizontalScrollbar = true;
             this.lstListFileAndFolder.Location = new System.Drawing.Point(217, 19);
             this.lstListFileAndFolder.Name = "lstListFileAndFolder";
-            this.lstListFileAndFolder.Size = new System.Drawing.Size(349, 78);
+            this.lstListFileAndFolder.Size = new System.Drawing.Size(349, 80);
             this.lstListFileAndFolder.TabIndex = 9;
             // 
             // lblDirectoryNumber
@@ -383,6 +385,16 @@
             this.btnFolderSelected.UseVisualStyleBackColor = true;
             this.btnFolderSelected.Click += new System.EventHandler(this.btnFolderSelected_Click);
             // 
+            // btnListFolderLock
+            // 
+            this.btnListFolderLock.Location = new System.Drawing.Point(462, 19);
+            this.btnListFolderLock.Name = "btnListFolderLock";
+            this.btnListFolderLock.Size = new System.Drawing.Size(134, 23);
+            this.btnListFolderLock.TabIndex = 12;
+            this.btnListFolderLock.Text = "View list folder lock";
+            this.btnListFolderLock.UseVisualStyleBackColor = true;
+            this.btnListFolderLock.Click += new System.EventHandler(this.btnListFolderLock_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,6 +457,7 @@
         private System.Windows.Forms.TextBox txtNameNewFolder;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtFolderSelected;
+        private System.Windows.Forms.Button btnListFolderLock;
     }
 }
 

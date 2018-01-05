@@ -137,6 +137,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmListFolderLock";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Secur Folder / List of folder lock";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
