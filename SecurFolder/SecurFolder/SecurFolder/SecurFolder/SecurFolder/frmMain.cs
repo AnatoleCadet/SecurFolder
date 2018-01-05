@@ -18,7 +18,7 @@ namespace SecurFolder
             InitializeComponent();
         }
 
-        private void btnLoadFolder_Click_1(object sender, EventArgs e)
+        private void btnLoadFolder_Click(object sender, EventArgs e)
         {
             fbdFolderSelected.ShowDialog();
             txtFolderName.Text = fbdFolderSelected.SelectedPath;
@@ -60,20 +60,13 @@ namespace SecurFolder
             lblFileNumber.Text = "";
             lblDirectoryNumber.Text = "";
             lblDateCreated.Text = "";
-            txtFolderSelected.Text = "";
-            txtFolderName.Clear();
+            lblFolderSelected.Text = "";
         }
 
         private void btnFolderSelected_Click(object sender, EventArgs e)
         {
             fbdFolderSelected.ShowDialog();
-            txtFolderSelected.Text = fbdFolderSelected.SelectedPath;
-            txtFolderName.Clear();
-        }
-
-        private void btnListFolderLock_Click(object sender, EventArgs e)
-        {
-
+            lblFolderSelected.Text = fbdFolderSelected.SelectedPath;
         }
     }
 }
