@@ -52,15 +52,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtPasswordConfirmNewFolder = new System.Windows.Forms.GroupBox();
-            this.btnFolderSelected = new System.Windows.Forms.Button();
-            this.txtFolderSelected = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtNameNewFolder = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnOkCreateLockFolder = new System.Windows.Forms.Button();
             this.txtPasswordNewFolder = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.txtNameNewFolder = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtFolderSelected = new System.Windows.Forms.TextBox();
+            this.btnFolderSelected = new System.Windows.Forms.Button();
             this.tcOperation.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -81,7 +81,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(411, 347);
+            this.btnClose.Location = new System.Drawing.Point(537, 397);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 2;
@@ -96,7 +96,7 @@
             this.tcOperation.Location = new System.Drawing.Point(12, 47);
             this.tcOperation.Name = "tcOperation";
             this.tcOperation.SelectedIndex = 0;
-            this.tcOperation.Size = new System.Drawing.Size(478, 294);
+            this.tcOperation.Size = new System.Drawing.Size(626, 344);
             this.tcOperation.TabIndex = 3;
             // 
             // tabPage1
@@ -107,7 +107,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(470, 268);
+            this.tabPage1.Size = new System.Drawing.Size(618, 318);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Lock existing folder";
             // 
@@ -130,6 +130,7 @@
             this.btnLoadFolder.TabIndex = 2;
             this.btnLoadFolder.Text = "...";
             this.btnLoadFolder.UseVisualStyleBackColor = true;
+            this.btnLoadFolder.Click += new System.EventHandler(this.btnLoadFolder_Click_1);
             // 
             // txtFolderName
             // 
@@ -164,14 +165,14 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(13, 60);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(442, 190);
+            this.groupBox2.Size = new System.Drawing.Size(583, 222);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(115, 130);
+            this.label7.Location = new System.Drawing.Point(115, 153);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 13);
             this.label7.TabIndex = 14;
@@ -179,7 +180,7 @@
             // 
             // txtPasswordConfirm
             // 
-            this.txtPasswordConfirm.Location = new System.Drawing.Point(217, 130);
+            this.txtPasswordConfirm.Location = new System.Drawing.Point(217, 153);
             this.txtPasswordConfirm.Name = "txtPasswordConfirm";
             this.txtPasswordConfirm.PasswordChar = '*';
             this.txtPasswordConfirm.Size = new System.Drawing.Size(144, 20);
@@ -187,7 +188,7 @@
             // 
             // btnOkPassword
             // 
-            this.btnOkPassword.Location = new System.Drawing.Point(217, 156);
+            this.btnOkPassword.Location = new System.Drawing.Point(217, 179);
             this.btnOkPassword.Name = "btnOkPassword";
             this.btnOkPassword.Size = new System.Drawing.Size(49, 23);
             this.btnOkPassword.TabIndex = 12;
@@ -196,7 +197,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(217, 103);
+            this.txtPassword.Location = new System.Drawing.Point(217, 126);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(144, 20);
@@ -205,7 +206,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 103);
+            this.label6.Location = new System.Drawing.Point(15, 126);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(196, 13);
             this.label6.TabIndex = 10;
@@ -217,9 +218,9 @@
             this.lstListFileAndFolder.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstListFileAndFolder.FormattingEnabled = true;
             this.lstListFileAndFolder.HorizontalScrollbar = true;
-            this.lstListFileAndFolder.Location = new System.Drawing.Point(170, 20);
+            this.lstListFileAndFolder.Location = new System.Drawing.Point(217, 19);
             this.lstListFileAndFolder.Name = "lstListFileAndFolder";
-            this.lstListFileAndFolder.Size = new System.Drawing.Size(247, 65);
+            this.lstListFileAndFolder.Size = new System.Drawing.Size(349, 78);
             this.lstListFileAndFolder.TabIndex = 9;
             // 
             // lblDirectoryNumber
@@ -283,7 +284,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(470, 268);
+            this.tabPage2.Size = new System.Drawing.Size(618, 318);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Creaye and lock folder";
             // 
@@ -303,41 +304,6 @@
             this.txtPasswordConfirmNewFolder.Size = new System.Drawing.Size(458, 196);
             this.txtPasswordConfirmNewFolder.TabIndex = 11;
             this.txtPasswordConfirmNewFolder.TabStop = false;
-            // 
-            // btnFolderSelected
-            // 
-            this.btnFolderSelected.Location = new System.Drawing.Point(6, 18);
-            this.btnFolderSelected.Name = "btnFolderSelected";
-            this.btnFolderSelected.Size = new System.Drawing.Size(172, 22);
-            this.btnFolderSelected.TabIndex = 2;
-            this.btnFolderSelected.Text = "Select where to create folder";
-            this.btnFolderSelected.UseVisualStyleBackColor = true;
-            this.btnFolderSelected.Click += new System.EventHandler(this.btnFolderSelected_Click);
-            // 
-            // txtFolderSelected
-            // 
-            this.txtFolderSelected.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtFolderSelected.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFolderSelected.Location = new System.Drawing.Point(9, 46);
-            this.txtFolderSelected.Name = "txtFolderSelected";
-            this.txtFolderSelected.Size = new System.Drawing.Size(443, 20);
-            this.txtFolderSelected.TabIndex = 3;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(83, 86);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Name of the new folder :";
-            // 
-            // txtNameNewFolder
-            // 
-            this.txtNameNewFolder.Location = new System.Drawing.Point(212, 86);
-            this.txtNameNewFolder.Name = "txtNameNewFolder";
-            this.txtNameNewFolder.Size = new System.Drawing.Size(162, 20);
-            this.txtNameNewFolder.TabIndex = 5;
             // 
             // label9
             // 
@@ -382,11 +348,46 @@
             this.label10.TabIndex = 15;
             this.label10.Text = "Lock the folder by entering a password :";
             // 
+            // txtNameNewFolder
+            // 
+            this.txtNameNewFolder.Location = new System.Drawing.Point(212, 86);
+            this.txtNameNewFolder.Name = "txtNameNewFolder";
+            this.txtNameNewFolder.Size = new System.Drawing.Size(162, 20);
+            this.txtNameNewFolder.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(83, 86);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(123, 13);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Name of the new folder :";
+            // 
+            // txtFolderSelected
+            // 
+            this.txtFolderSelected.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtFolderSelected.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFolderSelected.Location = new System.Drawing.Point(9, 46);
+            this.txtFolderSelected.Name = "txtFolderSelected";
+            this.txtFolderSelected.Size = new System.Drawing.Size(443, 20);
+            this.txtFolderSelected.TabIndex = 3;
+            // 
+            // btnFolderSelected
+            // 
+            this.btnFolderSelected.Location = new System.Drawing.Point(6, 18);
+            this.btnFolderSelected.Name = "btnFolderSelected";
+            this.btnFolderSelected.Size = new System.Drawing.Size(172, 22);
+            this.btnFolderSelected.TabIndex = 2;
+            this.btnFolderSelected.Text = "Select where to create folder";
+            this.btnFolderSelected.UseVisualStyleBackColor = true;
+            this.btnFolderSelected.Click += new System.EventHandler(this.btnFolderSelected_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 382);
+            this.ClientSize = new System.Drawing.Size(650, 432);
             this.Controls.Add(this.tcOperation);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label1);
